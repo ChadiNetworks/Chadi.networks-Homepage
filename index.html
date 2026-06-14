@@ -147,11 +147,13 @@
       </div>
 
       <div class="contact-wrapper">
-        <form
+       <form
           class="contact-form"
-          action="https://formsubmit.co/chadi.networks@gmail.com"
+          id="contactForm"
+          action="https://formsubmit.co/ajax/chadi.networks@gmail.com"
           method="POST"
         >
+
           <input
             type="hidden"
             name="_subject"
@@ -170,11 +172,6 @@
             value="false"
           />
 
-          <input
-            type="hidden"
-            name="_next"
-            value="https://chadinetworks.github.io/Chadi.networks-Homepage/danke.html"
-          />
 
           <input
             type="text"
@@ -252,6 +249,8 @@
           <button type="submit" class="button primary-button full-width">
             Anfrage absenden
           </button>
+
+          <p class="form-message" id="formMessage"></p>
 
           <p class="form-hint">
             Hinweis: Beim ersten Absenden musst du FormSubmit einmal per E-Mail bestätigen.
