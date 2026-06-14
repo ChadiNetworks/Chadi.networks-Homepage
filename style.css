@@ -246,7 +246,8 @@ h1 {
 .info-box,
 .service-card,
 .contact-form,
-.contact-card {
+.contact-card,
+.legal-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -354,6 +355,18 @@ textarea {
   font-size: 0.9rem;
 }
 
+.privacy-hint {
+  color: var(--text-light);
+  font-size: 0.92rem;
+  margin-bottom: 18px;
+}
+
+.privacy-hint a {
+  color: var(--primary);
+  font-weight: 800;
+  text-decoration: underline;
+}
+
 .hidden-field {
   display: none;
 }
@@ -382,6 +395,86 @@ textarea {
   padding-top: 20px;
 }
 
+.legal-hero {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 30%),
+    linear-gradient(135deg, #0f172a 0%, #111827 100%);
+  color: var(--white);
+  padding: 80px 20px;
+}
+
+.legal-hero-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.legal-hero h1 {
+  margin-bottom: 18px;
+}
+
+.legal-hero p {
+  color: #dbeafe;
+  max-width: 720px;
+}
+
+.legal-section {
+  max-width: 920px;
+}
+
+.legal-card {
+  padding: 34px;
+}
+
+.legal-card h2 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.45rem;
+}
+
+.legal-card h2:first-child {
+  margin-top: 0;
+}
+
+.legal-card h3 {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.legal-card p {
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.legal-card a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.legal-list {
+  margin: 0 0 18px 22px;
+  color: var(--text-light);
+}
+
+.legal-list li {
+  margin-bottom: 8px;
+}
+
+.legal-note {
+  margin-top: 28px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+}
+
+.legal-back-button {
+  margin-top: 28px;
+  text-decoration: none !important;
+}
+
 .site-footer {
   background: var(--background);
   color: #cbd5e1;
@@ -391,6 +484,29 @@ textarea {
 
 .site-footer a {
   color: #93c5fd;
+}
+
+.footer-links {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #94a3b8;
+}
+
+.footer-links a {
+  color: #93c5fd;
+  font-weight: 700;
+}
+
+@media (max-width: 1050px) {
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -462,5 +578,13 @@ textarea {
 
   .button {
     width: 100%;
+  }
+
+  .legal-card {
+    padding: 24px;
+  }
+
+  .legal-hero {
+    padding: 64px 20px;
   }
 }
